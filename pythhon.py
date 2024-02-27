@@ -11,6 +11,7 @@
 #    vysledne_ceny.append(suma)
 #    print(min(vysledne_ceny))
 
+#####################################################################################################################################################
 
 
 
@@ -18,6 +19,7 @@
 #pole = [["a", "b", "c"]["d", "e", ["f", "g"]]
 #print(pole[1][2][0])
 
+#####################################################################################################################################################
 
 
 
@@ -33,6 +35,7 @@
 #for x in field:
 #    print(" ".join(x))
 
+######################################################################################################################################################
 
 
 
@@ -61,6 +64,7 @@
 #        for x in field:
 #            print(" ".join(x))
 
+######################################################################################################################################################
 
 
 
@@ -74,34 +78,164 @@
 
 #print(math.sqrt(x+y))
 
+######################################################################################################################################################
+
+#import random
+#w, h, mines = 16, 5, 10
+ 
+## gene field
+#field = [[0 for y in range(h)] for x in range(w)]
+ 
+# put mine on random position
+#for i in range(mines):
+#    while True:
+#        rx = random.randint(0, w - 1)
+#        ry = random.randint(0, h - 1)
+#        if field[rx][ry] != "m":
+#           field[rx][ry] = "M"
+#           break
+
+#for y in range(h):
+#    for x in range(w):
+#        if field[x][y] == "M":
+#           # print("Mina na[{}]".format(x, y))
+#           for delta in deltas:
+               
+## print field
+#     for y in range(h):
+#      for x in range(w):
+#        print(field[x][y], end="")
+#    print()
+
+
+######################################################################################################################################################
+
+
+#arr = [[65, 98, 88, 54, 47],[35, 55, 98, 69],[35, 65, 62, 75, 99]]
+#for i in range(len(arr)):
+#    for y in range(len(arr[i])):
+#        if arr[i][y] > 50:
+#            # print("arr[", i,"][", y,"], " = ", arr[i][y])
+#            print(f"arr[{i}][{y}] = {arr[i][y]}")
+
+########################################################################################################################################################
+
+
+#field = [["_" for _ in range(3)] for _ in range(3)]
+
+#def print_field(field):
+#     for x in field:
+#          print(" ".join(x))
+
+#current_player = 0
+
+#while True:
+#    print_field(field)
+
+#    if current_player == 0:
+#         print("hraje hráč X")
+#    else:
+#        print("hraje hráč O")
+
+#    play_x = input("zadej x:")
+#    if play_x == "q":
+#          break
+#    play_x = int(play_x)
+#    play_y = int(input("zadej y:"))    
+
+#    if current_player == 0:
+#         field[play_y][play_x] = "x"
+#         current_player = 1
+#    else:
+#        field[play_y][play_x] = "o"
+#        current_player = 0
+
+
+#######################################################################################################################################################
+
+#arr = [5, 2, 8, 6, 1]
+
+#arr[4], arr[0] = arr[0], arr[4]
+#print(arr)
 
 
 
 
 
-field = []
-i = 1
-for y in range(8):
-    row = []
-    j = 0
-    for x in range(8):
-        if i > 0:
-            if j%2 == 0:
-                row.append("o")
-            else:
-                row.append("x")
-            j+=1
-        else: 
-            if j%2 == 0:
-                row.append("x")
-            else:
-               row.append("o")
-            j+=1
-        i*=1
-        field.append(row)
-        for x in field:
-            print(" ".join(x))
-            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
