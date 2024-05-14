@@ -369,6 +369,47 @@
 #        vysledek += f"{dict[y]}/"
 #    print(vysledek)
 
+#####################################################################################################################################################################################
+
+
+def caesar_cipher(text, shift, mode='encrypt'):
+    # Anglická abeceda
+    alphabet = 'abcdefghijklmnopqrstuvwxyz'
+    result = ''
+   
+    for char in text:
+        if char.lower() in alphabet:
+            is_lower = char.islower()
+            index = alphabet.find(char.lower())
+           
+            if mode == 'encrypt':
+                new_index = (index + shift) % len(alphabet)
+            elif mode == 'decrypt':
+                new_index = (index - shift) % len(alphabet)
+            else:
+                raise ValueError("Invalid mode! Use 'encrypt' or 'decrypt'.")
+               
+            if is_lower:
+                result += alphabet[new_index]
+            else:
+                result += alphabet[new_index].upper()
+        else:
+            result += char
+ 
+    return result
+ 
+# Testovací příklady
+text = "axk gb eljlpburái"
+shift = 3
+ 
+# Šifrování
+encrypted_text = caesar_cipher(text, shift, mode='encrypt')
+print(f'Šifrovaný text: {encrypted_text}')
+ 
+# Dešifrování
+decrypted_text = caesar_cipher(encrypted_text, shift, mode='decrypt')
+print(f'Dešifrovaný text: {decrypted_text}')
+
 
 
 
