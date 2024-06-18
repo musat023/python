@@ -370,48 +370,141 @@
 #    print(vysledek)
 
 #####################################################################################################################################################################################
+#dict = {'A':'0',
+#         'B':'1',
+#         'C':'00',
+#         'D':'01',
+#         'E':'10',
+#         'F':'11',
+#         'G':'000',
+#         'H':'001',
+#         'I':'010',
+#         'J':'011',
+#         'K':'100',
+#         'L':'101',
+#         'M':'110',
+#         'N':'111',
+#         'O':'0000',
+#         'P':'0001',
+#         'Q':'0010',
+#         'R':'0011',
+#         'S':'0100',
+#         'T':'0101',
+#         'U':'0110',
+#         'V':'0111',
+#         'W':'1000',
+#         'X':'1001',
+#         'Y':'1010',
+#         'Z':'1011',
+#         '.':'1100',
+#         ',':'1101',
+#         ':':'1110',
+#         ' ':'1111',        
+#         }
+         
+#print(dict["X"])
+#print(dict.values())
+#vysledek = ""
+ 
+#user_input = input("")
+ 
+#for x in range(1):
+#    for y in user_input.upper():
+#        vysledek += f"{dict[y]}/"
+#    print(vysledek)
+
+#user_choice = input("Znak > Cesta / Cesta > Znak / Dekódování / Zakódování \n1/2/3/4: ")
+
+################# ZNAK > CESTA
+#if user_choice == "1":
+#user_input = input("Znak: ")
+#    print(tree[user_input])
+
+################# CESTA > ZNAK
+#elif user_choice == "2":
+#    user_input = input("Cesta: ")
+#     for key, value in tree.items():
+#             if value == user_input:
+#                     print(key)
 
 
-def caesar_cipher(text, shift, mode='encrypt'):
-    # Anglická abeceda
-    alphabet = 'abcdefghijklmnopqrstuvwxyz'
-    result = ''
+#########################################################################################################################################
+
+#def caesar_cipher(text, shift, mode='encrypt'):
+#    # Anglická abeceda
+#    alphabet = 'abcdefghijklmnopqrstuvwxyz'
+#    result = ''
    
-    for char in text:
-        if char.lower() in alphabet:
-            is_lower = char.islower()
-            index = alphabet.find(char.lower())
+#    for char in text:
+#            is_lower = char.islower()
+#        if char.lower() in alphabet:
+#            index = alphabet.find(char.lower())
            
-            if mode == 'encrypt':
-                new_index = (index + shift) % len(alphabet)
-            elif mode == 'decrypt':
-                new_index = (index - shift) % len(alphabet)
-            else:
-                raise ValueError("Invalid mode! Use 'encrypt' or 'decrypt'.")
-               
-            if is_lower:
-                result += alphabet[new_index]
-            else:
-                result += alphabet[new_index].upper()
-        else:
-            result += char
- 
-    return result
- 
-# Testovací příklady
-text = "axk gb eljlpburái"
-shift = 3
- 
+#            if mode == 'encrypt':
+#                new_index = (index + shift) % len(alphabet)
+#            elif mode == 'decrypt':
+#                new_index = (index - shift) % len(alphabet)
+#            else:
+#               raise ValueError("Invalid mode! Use 'encrypt' or 'decrypt'.")
+#               
+#            if is_lower:
+#                result += alphabet[new_index]
+#            else:
+#                result += alphabet[new_index].upper()
+#        else:
+#            result += char
+# 
+#    return result
+# 
+## Testovací příklady
+#text = "axk gb eljlpburái"
+#shift = 3
+# 
 # Šifrování
-encrypted_text = caesar_cipher(text, shift, mode='encrypt')
-print(f'Šifrovaný text: {encrypted_text}')
- 
-# Dešifrování
-decrypted_text = caesar_cipher(encrypted_text, shift, mode='decrypt')
-print(f'Dešifrovaný text: {decrypted_text}')
+#encrypted_text = caesar_cipher(text, shift, mode='encrypt')
+#print(f'Šifrovaný text: {encrypted_text}')
+# 
+## Dešifrování
+#decrypted_text = caesar_cipher(encrypted_text, shift, mode='decrypt')
+#print(f'Dešifrovaný text: {decrypted_text}')
+
+####################################################################################################################################################
+
+#morse = {"A":".-",    "B":"-...",  "C":"-.-.",
+
+#"D":"-..",   "E":".",     "F":"..-.",
+
+#"G":"--.",   "H":"....",  "I":"..",
+
+#"J":".---",  "K":"-.-",   "L":".-..",
+
+#"M":"--",    "N":"-.",    "O":"---",
+
+#"P":".--.",  "Q":"--.-",  "R":".-.",
+
+#"S":"...",   "T":"-",     "U":"..-",
+
+#"V":"...-",  "W":".--",   "X":"-..-",
+
+#"Y":"-.--",  "Z":"--..",  "1":".----",
+
+#"2":"..---", "3":"...--", "4":"....-",
+
+#"5":".....", "6":"-....", "7":"--...",
+
+#"8":"---..", "9":"----.", "0":"-----"
+#}
+
+#input_text = "9k73k1"
+#morse_text = ""
 
 
+#for char in input_text.upper():
+#    morse_text+= morse[char]
 
+#print(morse_text)
+
+#####################################################################################################################################################
 
     
 
