@@ -1,0 +1,50 @@
+#class Point:
+#     x = 0 # statická vlastnost x třídy Point
+#     y = 2
+
+##print(Point.x, Point.y)
+#Point.x = 5
+#A = Point()
+#B = Point()
+#print(Point.x, A.x, B.x)
+#C = Point()
+#Point.x = 57
+#print(Point.x, A.x, B.x, C.x)
+
+###################################################################################################
+
+
+#class Point:
+
+#    def _init_(self, xcoord, ycoord):
+#        self.x = xcoord
+#        self.y = ycoord
+
+#    def _str_(self):
+#        return f"[{self.x}, {self.y}]"
+    
+#p = Point(0, 2) 
+#q = Point(3, 5)
+#print(q)
+#print(p)
+
+
+
+########################################################################################################
+
+
+#class Point:
+
+#    def _init_(self, xcoord, ycoord):
+#        self.x = xcoord
+#        self.y = ycoord
+
+#    def _str_(self):
+#      return f"[{self.x}, {self.y}]"
+    
+#p = Point(0, 2) 
+#q = p
+#q.x = 25
+#print(p)
+
+######################################################################################################
